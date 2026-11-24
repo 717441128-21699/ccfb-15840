@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0f1420" />
+    <title>钢琴调律助手 · Inharmonic Tuning Suite</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">♪</span>
+          <div>
+            <h1>钢琴调律助手</h1>
+            <p id="pianoSubtitle">未选择钢琴档案</p>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <label class="source-switch">
+            <input type="checkbox" id="demoMode" />
+            <span>模拟弦演示</span>
+          </label>
+        </div>
+      </header>
+
+      <main id="pageHost"></main>
+
+      <nav class="tabbar">
+        <button class="tab active" data-page="measure">
+          <span class="tab-ico">🎚</span><span>测弦</span>
+        </button>
+        <button class="tab" data-page="curve">
+          <span class="tab-ico">📈</span><span>调律曲线</span>
+        </button>
+        <button class="tab" data-page="tune">
+          <span class="tab-ico">🎯</span><span>逐键调律</span>
+        </button>
+        <button class="tab" data-page="archive">
+          <span class="tab-ico">🗂</span><span>琴档案</span>
+        </button>
+      </nav>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
